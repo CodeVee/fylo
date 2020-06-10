@@ -1,0 +1,77 @@
+:root {
+  --font-size: 14px;
+  --max-width: 1440px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: var(--font-size);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  z-index: 3;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#main {
+  background-color: hsl(229, 57%, 11%);
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#main #image-overlay {
+    position: absolute;
+    height: 54%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: url("../images/bg-desktop.svg") no-repeat center center/cover;
+}
+
+.wrapper {
+    z-index: 3;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 12rem;
+    width: 60rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-box {
+    width: 20rem;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: .5rem;
+    border-top-right-radius: 5rem;
+}
+
+.storage-box {
+    width: 37rem;
+    height: 70%;
+    margin-top: auto;
+    background-color: hsl(228, 56%, 26%);
+}
