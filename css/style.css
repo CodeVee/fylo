@@ -16,6 +16,14 @@ html {
   line-height: 1.5;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -63,15 +71,46 @@ html {
 }
 
 .logo-box {
-    width: 20rem;
+    width: 22rem;
     background-color: hsl(228, 56%, 26%);
     border-radius: .5rem;
     border-top-right-radius: 5rem;
+    padding: 3rem;
 }
 
+.logo-box > img {
+    width: 8rem;
+}
+
+.logo-icons {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    width: 9rem;
+    justify-content: space-between;
+    height: 2rem;
+}
+
+.logo-icons > li {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-icons > li img {
+    transform: scale(.7);
+}
+
+
+
 .storage-box {
-    width: 37rem;
-    height: 70%;
+    width: 36rem;
+    height: 75%;
     margin-top: auto;
     background-color: hsl(228, 56%, 26%);
+    border-radius: .5rem;
 }
