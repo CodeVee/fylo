@@ -1,6 +1,13 @@
 :root {
   --font-size: 14px;
   --max-width: 1440px;
+  --dark-blue: hsl(229, 57%, 11%);
+  --light-blue: hsl(228, 56%, 26%);
+  --light-color: #f0f0f0;
+  --light-pink: hsl(6, 100%, 80%);
+  --dark-pink: hsl(335, 100%, 65%);
+  --dark-grey: hsl(229, 7%, 55%);
+  --light-grey: hsl(243, 100%, 93%);
 }
 
 * {
@@ -39,7 +46,7 @@ li {
 }
 
 #main {
-  background-color: hsl(229, 57%, 11%);
+  background-color: var(--dark-blue);
   height: 100vh;
   position: relative;
   display: flex;
@@ -72,7 +79,7 @@ li {
 
 .logo-box {
   width: 22rem;
-  background-color: hsl(228, 56%, 26%);
+  background-color: var(--light-blue);
   border-radius: 0.5rem;
   border-top-right-radius: 5rem;
   padding: 3rem;
@@ -94,7 +101,7 @@ li {
 .logo-icons > li {
   height: 2.5rem;
   width: 2.5rem;
-  background-color: hsl(229, 57%, 11%);
+  background-color: var(--dark-blue);
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
@@ -109,15 +116,15 @@ li {
   width: 36rem;
   height: 75%;
   margin-top: auto;
-  background-color: hsl(228, 56%, 26%);
+  background-color: var(--light-blue);
   border-radius: 0.5rem;
   position: relative;
   padding: 2.5rem;
-  color: #f0f0f0;
+  color: var(--light-color);
 }
 
 .rem-box {
-  background-color: white;
+  background-color: var(--light-color);
   width: 10.3rem;
   height: 4.5rem;
   border-radius: 0.5rem;
@@ -130,7 +137,7 @@ li {
 .rem-box p {
   font-size: 0.8rem;
   font-weight: 700;
-  color: #9b9b9b;
+  color: var(--dark-grey);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +146,7 @@ li {
 
 .rem-box p span:first-child {
   font-size: 2.3rem;
-  color: #333;
+  color: var(--dark-blue);
   padding-right: 0.7rem;
 }
 
@@ -148,22 +155,22 @@ li {
   width: 0;
   height: 0;
   border-left: 30px solid transparent;
-  border-top: 25px solid white;
+  border-top: 25px solid var(--light-color);
   right: 1.97rem;
   top: 1rem;
 }
 
 .storage-box > small {
-    color: #dcdcdc;
+    color: var(--light-grey);
 }
 .storage-box > small span {
   font-weight: 700;
-  color: #f0f0f0;
+  color: var(--light-color);
 }
 
 .progress-bar {
     height: 1rem;
-    background-color: hsl(229, 57%, 11%);
+    background-color: var(--dark-blue);
     border-radius: 1rem;
     margin: .5rem 0;
     display: flex;
@@ -173,7 +180,7 @@ li {
 
 .progress-bar .bar {
     width: 80%;
-    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    background-image: linear-gradient(to right, var(--light-pink), var(--dark-pink));
     display: inline-block;
     height: 75%;
     border-radius: 1rem;
@@ -184,7 +191,7 @@ li {
     height: 70%;
     width: .7rem;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--light-color);
     margin-left: -.9rem;
     align-self: center;
 }
