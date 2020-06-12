@@ -17,11 +17,11 @@ html {
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 li {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container {
@@ -47,108 +47,142 @@ li {
 }
 
 #main #image-overlay {
-    position: absolute;
-    height: 54%;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    background: url("../images/bg-desktop.svg") no-repeat center center/cover;
+  position: absolute;
+  height: 54%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: url("../images/bg-desktop.svg") no-repeat center center/cover;
 }
 
 .wrapper {
-    z-index: 3;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  z-index: 3;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box {
-    height: 12rem;
-    width: 60rem;
-    display: flex;
-    justify-content: space-between;
+  height: 12rem;
+  width: 60rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo-box {
-    width: 22rem;
-    background-color: hsl(228, 56%, 26%);
-    border-radius: .5rem;
-    border-top-right-radius: 5rem;
-    padding: 3rem;
+  width: 22rem;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 0.5rem;
+  border-top-right-radius: 5rem;
+  padding: 3rem;
 }
 
 .logo-box > img {
-    width: 7rem;
+  width: 7rem;
 }
 
 .logo-icons {
-    margin-top: 1.5rem;
-    display: flex;
-    align-items: center;
-    width: 9rem;
-    justify-content: space-between;
-    height: 2rem;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  width: 9rem;
+  justify-content: space-between;
+  height: 2rem;
 }
 
 .logo-icons > li {
-    height: 2.5rem;
-    width: 2.5rem;
-    background-color: hsl(229, 57%, 11%);
-    border-radius: .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-icons > li img {
-    transform: scale(.7);
+  transform: scale(0.7);
 }
 
 .storage-box {
-    width: 36rem;
-    height: 75%;
-    margin-top: auto;
-    background-color: hsl(228, 56%, 26%);
-    border-radius: .5rem;
-    position: relative;
+  width: 36rem;
+  height: 75%;
+  margin-top: auto;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 0.5rem;
+  position: relative;
+  padding: 2.5rem;
+  color: #f0f0f0;
 }
 
 .rem-box {
-    background-color: white;
-    width: 10.3rem;
-    height: 4.5rem;
-    border-radius: .5rem;
-    position: absolute;
-    right: 2rem;
-    top: -3rem;
-    /* padding-top: .3rem; */
-    text-transform: uppercase;
+  background-color: white;
+  width: 10.3rem;
+  height: 4.5rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  right: 2rem;
+  top: -3rem;
+  text-transform: uppercase;
 }
 
 .rem-box p {
-    font-size: .8rem;
-    font-weight: 700;
-    color: #9b9b9b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #9b9b9b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
 }
 
 .rem-box p span:first-child {
-    font-size: 2.3rem;
-    color: #333;
-    padding-right: .7rem;
+  font-size: 2.3rem;
+  color: #333;
+  padding-right: 0.7rem;
 }
 
-
 .triangle-down {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 30px solid transparent;
-    border-top: 25px solid white;
-    right: 1.97rem;
-    top: 1rem;
-  }
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-top: 25px solid white;
+  right: 1.97rem;
+  top: 1rem;
+}
+
+.storage-box > small span {
+  font-weight: 700;
+}
+
+.progress-bar {
+    height: .9rem;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 1rem;
+    margin: .5rem 0;
+    display: flex;
+}
+
+.progress-bar .bar {
+    width: 80%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    display: inline-block;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.progress-bar .circle {
+    display: inline-block;
+    height: 80%;
+    width: .8rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: -1rem;
+    align-self: center;
+}
+
+.storage-box > p {
+    display: flex;
+}
