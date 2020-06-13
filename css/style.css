@@ -95,7 +95,6 @@ li {
   align-items: center;
   width: 9rem;
   justify-content: space-between;
-  height: 2rem;
 }
 
 .logo-icons > li {
@@ -114,7 +113,7 @@ li {
 
 .storage-box {
   width: 36rem;
-  height: 75%;
+  height: 9rem;
   margin-top: auto;
   background-color: var(--light-blue);
   border-radius: 0.5rem;
@@ -161,7 +160,7 @@ li {
 }
 
 .storage-box > small {
-    color: var(--light-grey);
+  color: var(--light-grey);
 }
 .storage-box > small span {
   font-weight: 700;
@@ -169,34 +168,106 @@ li {
 }
 
 .progress-bar {
-    height: 1rem;
-    background-color: var(--dark-blue);
-    border-radius: 1rem;
-    margin: .5rem 0;
-    display: flex;
-    align-items: center;
-    padding: 0 .2rem;
+  height: 1rem;
+  background-color: var(--dark-blue);
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  padding: 0 0.2rem;
 }
 
 .progress-bar .bar {
-    width: 80%;
-    background-image: linear-gradient(to right, var(--light-pink), var(--dark-pink));
-    display: inline-block;
-    height: 75%;
-    border-radius: 1rem;
+  width: 80%;
+  background-image: linear-gradient(
+    to right,
+    var(--light-pink),
+    var(--dark-pink)
+  );
+  display: inline-block;
+  height: 75%;
+  border-radius: 1rem;
 }
 
 .progress-bar .circle {
-    display: inline-block;
-    height: 70%;
-    width: .7rem;
-    border-radius: 50%;
-    background-color: var(--light-color);
-    margin-left: -.9rem;
-    align-self: center;
+  display: inline-block;
+  height: 70%;
+  width: 0.7rem;
+  border-radius: 50%;
+  background-color: var(--light-color);
+  margin-left: -0.9rem;
+  align-self: center;
 }
 
 .range {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+  #main {
+    overflow: hidden;
+  }
+
+  #main #image-overlay {
+    height: 100%;
+    background: url("../images/bg-mobile.svg") no-repeat center center/cover;
+  }
+
+  .wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    height: 80%;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: start;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .logo-box {
+    width: auto;
+    height: 14rem;
+    border-top-right-radius: 8rem;
+    margin-top: 5rem;
+  }
+
+  .storage-box {
+    width: auto;
+    height: 11rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .logo-box > img {
+    width: 9rem;
+  }
+
+  .logo-icons {
+    width: 11.5rem;
+  }
+
+  .logo-icons > li {
+    height: 3.3rem;
+    width: 3.3rem;
+    margin-top: 2rem;
+  }
+
+  .logo-icons > li img {
+    transform: scale(1);
+  }
+
+  .rem-box {
+    right: 5rem;
+    top: 9rem;
+    width: 12rem;
+  }
+
+  .triangle-down {
+    display: none;
+  }
 }
